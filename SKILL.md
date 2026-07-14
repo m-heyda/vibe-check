@@ -8,6 +8,7 @@ description: Pre-build validation for startup and side-project ideas. Spawns par
 Brutally honest pre-build advisor. **Verdict + reasoning + improvements** — not hype, not implementation help.
 
 **Deliver every session:**
+
 1. Verdict (✅ / 🟡 / ❌)
 2. Logical reasoning (evidence, not invented numbers)
 3. Improvements (stack and/or plan fixes)
@@ -23,13 +24,13 @@ Brutally honest pre-build advisor. **Verdict + reasoning + improvements** — no
 
 ## Input maturity
 
-| Level | User has | Deliver |
-|-------|----------|---------|
-| A | Idea only | Recommended stack + MVP scope |
-| B | Idea + constraints | Stack matched to skills/scale |
-| C | PRD / features | Plan fixes |
-| D | Stack / architecture | Stack/architecture fixes |
-| E | Repo / prototype | Prioritized fix list |
+| Level | User has             | Deliver                       |
+| ----- | -------------------- | ----------------------------- |
+| A     | Idea only            | Recommended stack + MVP scope |
+| B     | Idea + constraints   | Stack matched to skills/scale |
+| C     | PRD / features       | Plan fixes                    |
+| D     | Stack / architecture | Stack/architecture fixes      |
+| E     | Repo / prototype     | Prioritized fix list          |
 
 Details: [templates/intake-questions.md](templates/intake-questions.md)
 
@@ -58,12 +59,12 @@ Read [templates/parallel-evaluation.md](templates/parallel-evaluation.md).
 
 After Phase 1 confirmation, launch **in parallel** (same turn, multiple Task/subagent calls):
 
-| Subagent | Focus | Required |
-|----------|-------|----------|
-| Stack | Fit, recommendation, cost traps | Always |
-| Security | 🔴/🟡/🟢 findings | Always |
-| Competitors | Web search, saturation, gaps | Always |
-| Plan | Fixes for PRD/arch/repo | Level C/D/E |
+| Subagent    | Focus                           | Required    |
+| ----------- | ------------------------------- | ----------- |
+| Stack       | Fit, recommendation, cost traps | Always      |
+| Security    | 🔴/🟡/🟢 findings               | Always      |
+| Competitors | Web search, saturation, gaps    | Always      |
+| Plan        | Fixes for PRD/arch/repo         | Level C/D/E |
 
 Each subagent gets the **context packet** from Phase 1. **readonly:** true.
 
@@ -77,14 +78,14 @@ From Evaluation Brief + [references/technology-guide.md](references/technology-g
 
 Answer in prose for the report **Reasoning** section:
 
-| Question | Address |
-|----------|---------|
-| Real problem? | Who hurts, how, vs alternatives |
-| Differentiated? | Why not a clone/wrapper |
-| Buildable? | Skills vs complexity |
-| Worth paying for? | Payer + logic |
-| Defensible? | Moat or lack thereof |
-| Durable? | Survives platform AI? |
+| Question          | Address                         |
+| ----------------- | ------------------------------- |
+| Real problem?     | Who hurts, how, vs alternatives |
+| Differentiated?   | Why not a clone/wrapper         |
+| Buildable?        | Skills vs complexity            |
+| Worth paying for? | Payer + logic                   |
+| Defensible?       | Moat or lack thereof            |
+| Durable?          | Survives platform AI?           |
 
 **Build Score (1–10)** + paragraph: 8–10 strong · 5–7 fixable gaps · 1–4 don't build. Cap wrapper at 4; 🔴 security at 3.
 
@@ -112,24 +113,24 @@ Include **Persona Panel** summary (key exchanges + consensus/split).
 
 **Verdict:** ✅ Build · 🟡 Change first · ❌ Don't build
 
-| Level | Required |
-|-------|----------|
-| A/B | Technology Recommendations |
-| C/D/E | Plan & Architecture Fixes |
-| All | Reasoning, Persona Panel, Roadmap, Before → After |
+| Level | Required                                          |
+| ----- | ------------------------------------------------- |
+| A/B   | Technology Recommendations                        |
+| C/D/E | Plan & Architecture Fixes                         |
+| All   | Reasoning, Persona Panel, Roadmap, Before → After |
 
 ---
 
 ## Anti-patterns
 
-| Pattern | Response |
-|---------|----------|
-| ChatGPT wrapper, no moat | Flag; wedge or don't build |
-| No "who pays?" | Block ✅ for startup |
-| K8s/microservices solo MVP | Over-engineering |
-| No RLS multi-tenant Supabase | 🔴 security |
-| AWS/GCP without ops experience | Cost + complexity trap |
-| Open AI key on client | Bill shock + 🔴 |
+| Pattern                        | Response                   |
+| ------------------------------ | -------------------------- |
+| ChatGPT wrapper, no moat       | Flag; wedge or don't build |
+| No "who pays?"                 | Block ✅ for startup       |
+| K8s/microservices solo MVP     | Over-engineering           |
+| No RLS multi-tenant Supabase   | 🔴 security                |
+| AWS/GCP without ops experience | Cost + complexity trap     |
+| Open AI key on client          | Bill shock + 🔴            |
 
 ---
 
@@ -156,16 +157,16 @@ vibe-check/
 
 ## Resources
 
-| File | Use |
-|------|-----|
-| [templates/intake-questions.md](templates/intake-questions.md) | Phase 1 |
-| [templates/parallel-evaluation.md](templates/parallel-evaluation.md) | Phase 2 subagents |
-| [templates/persona-review.md](templates/persona-review.md) | Phase 4 panel |
-| [templates/final-report.md](templates/final-report.md) | Phase 6 |
-| [templates/improvement-plan.md](templates/improvement-plan.md) | Fixes + stack |
-| [references/personas.md](references/personas.md) | Voices + tone |
-| [references/technology-guide.md](references/technology-guide.md) | Stack + cost traps |
-| [references/security-checklist.md](references/security-checklist.md) | Security domain |
+| File                                                                 | Use                |
+| -------------------------------------------------------------------- | ------------------ |
+| [templates/intake-questions.md](templates/intake-questions.md)       | Phase 1            |
+| [templates/parallel-evaluation.md](templates/parallel-evaluation.md) | Phase 2 subagents  |
+| [templates/persona-review.md](templates/persona-review.md)           | Phase 4 panel      |
+| [templates/final-report.md](templates/final-report.md)               | Phase 6            |
+| [templates/improvement-plan.md](templates/improvement-plan.md)       | Fixes + stack      |
+| [references/personas.md](references/personas.md)                     | Voices + tone      |
+| [references/technology-guide.md](references/technology-guide.md)     | Stack + cost traps |
+| [references/security-checklist.md](references/security-checklist.md) | Security domain    |
 
 ## Quality gate
 
